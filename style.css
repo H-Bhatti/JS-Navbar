@@ -60,7 +60,7 @@ nav {
         align-items: center;
         width: 20%;
         transform: translateX(100%);
-        transition: tranaform 0.5s ease-in;
+        transition: transform 0.5s ease-in;
 
     }
     .nav-links li{
@@ -70,7 +70,19 @@ nav {
         display: block;
         cursor: pointer;
     }
-    .nav-active{
-        transform: translateX(0%);
+
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from{ 
+        opacity: 0;
+        transform: translateX(50px);
     }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
 }
